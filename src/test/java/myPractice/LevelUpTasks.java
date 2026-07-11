@@ -27,8 +27,9 @@ public class LevelUpTasks {
         Assert.assertTrue
                 (driver.findElement(By.xpath("(//a[@title='Learn about DuckDuckGo']//img)[2]"))
                         .isDisplayed(), "DuckDuckGo Logo is not displayed");
-
     }
+
+
     @BeforeMethod
     public void beforeMethod() {
         driver = new ChromeDriver(getChromeOptions());
