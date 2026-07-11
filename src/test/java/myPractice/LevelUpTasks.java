@@ -1,5 +1,6 @@
 package myPractice;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -19,6 +20,14 @@ public class LevelUpTasks {
         String pageTitle= driver.getTitle();
         System.out.println("Page Title is: "+pageTitle);
         Assert.assertEquals(pageTitle,"Google");
+    }
+    @Test
+    public void navigateToDuckDuckGoAndAssertPageTitleTask2(){
+        driver.navigate().to("https://duckduckgo.com");
+        Assert.assertTrue
+                (driver.findElement(By.xpath("(//a[@title='Learn about DuckDuckGo']//img)[2]"))
+                        .isDisplayed(), "DuckDuckGo Logo is not displayed");
+
     }
     @BeforeMethod
     public void beforeMethod() {
