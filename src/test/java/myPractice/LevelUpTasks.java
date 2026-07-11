@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.util.Collections;
 
-public class Task1 {
+public class LevelUpTasks {
     private WebDriver driver;
 
     @Test
