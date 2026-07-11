@@ -14,7 +14,7 @@ public class LevelUpTasks {
     private WebDriver driver;
 
     @Test
-    public void navigateToGoogole(){
+    public void navigateToGoogoleAndAssertPageTitleTask1(){
         driver.navigate().to("https://google.com");
         String pageTitle= driver.getTitle();
         System.out.println("Page Title is: "+pageTitle);
